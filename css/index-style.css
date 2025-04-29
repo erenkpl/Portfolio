@@ -29,6 +29,7 @@ body{
 .yazi{
     width: 50%;
     position: relative;
+    left: 10%;
     top: -10%;
     text-align: left;
 }
