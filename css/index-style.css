@@ -1,0 +1,99 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 15px;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(
+        100deg,
+        #C4C4C4 50%,
+        #000 50%
+    );
+    font-family: "Raleway", sans-serif;
+}
+
+.ust-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 80px);
+    padding: 0 50px;
+}
+
+.yazi{
+    width: 50%;
+    position: relative;
+    top: -10%;
+    text-align: left;
+}
+
+#merhaba{
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#isim{
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#bilgi{
+    font-weight: 500;
+    font-size: 20px;
+    color: #909090;
+}
+
+.div-foto{
+    width: 50%;
+    height: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.portrait-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    top: -20%;
+}
+
+.nav-buttons{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin-left: 10px;
+    border: none;
+    background: none;
+    color: #C4C4C4;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: transform ease 0.3s, ease 0.3s;
+}
+
+.nav-buttons:hover{
+    color: #9b9b9b;
+    transform: scale(1.05);
+}
+
+.nav-buttons:active{
+    transform: scale(0.95);
+}
+
+#iletisim-butonu{
+    background: #fff;
+    color: #000;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2);
+}
