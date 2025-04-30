@@ -36,19 +36,19 @@ body{
 
 #merhaba{
     font-weight: 500;
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 30px;
 }
 
 #isim{
     font-weight: 600;
-    font-size: 50px;
+    font-size: 60px;
     margin-bottom: 10px;
 }
 
 #bilgi{
     font-weight: 500;
-    font-size: 20px;
+    font-size: 30px;
     color: #909090;
 }
 
