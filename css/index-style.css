@@ -201,7 +201,7 @@ ul{
     list-style: none;
 }
 
-@media(max-width: 767px){
+@media(max-width: 768px){
 
     .hamburger-menu{
         display: flex;
