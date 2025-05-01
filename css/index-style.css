@@ -269,4 +269,16 @@ ul{
         mix-blend-mode: difference;
         left: 0;
     }
+
+    #merhaba{
+        font-size: 30px;
+    }
+
+    #isim{
+        font-size: 50px;
+    }
+
+    #bilgi{
+        font-size: 20px;
+    }
 }
