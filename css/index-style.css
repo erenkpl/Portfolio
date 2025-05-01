@@ -43,6 +43,7 @@ body{
     left: 5%;
     top: -10%;
     text-align: left;
+    z-index: 1;
 }
 
 #merhaba{
@@ -71,8 +72,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     position: relative;
+    z-index: 2;
 }
 
 .portrait-image{
