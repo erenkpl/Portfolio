@@ -36,6 +36,8 @@ body{
 }
 
 .yazi{
+    visibility: hidden;
+    opacity: 0;
     width: 50%;
     position: relative;
     left: 5%;
@@ -62,6 +64,8 @@ body{
 }
 
 .div-foto{
+    visibility: hidden;
+    opacity: 0;
     width: 50%;
     height: 110%;
     display: flex;
@@ -216,6 +220,24 @@ body{
 ul{
     display: flex;
     list-style: none;
+}
+
+.div-foto, .yazi{
+    transform: translateY(50px);
+}
+
+.div-foto.show{
+    visibility: visible;
+    transition: opacity 1s ease, transform 1s ease;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.yazi.show{
+    visibility: visible;
+    transition: opacity 1s ease, transform 1s ease;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 @media(max-width: 767px){
