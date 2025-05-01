@@ -104,3 +104,25 @@ body{
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.2);
 }
+
+@media(max-width: 767px){
+    .ust-div{
+        flex-direction: column-reverse;
+        padding: 0 10px;
+    }
+
+    .div-foto{
+        width: 80%;
+    }
+
+    .yazi{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        color: #C4C4C4;
+        mix-blend-mode: difference;
+        left: 0;
+    }
+}
