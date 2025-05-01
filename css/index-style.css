@@ -248,6 +248,18 @@ ul{
     transform: translateY(0);
 }
 
+footer p{
+    text-align: center;
+    background: transparent;
+}
+
+footer p{
+    margin: 0;
+    color: #C4C4C4;
+    mix-blend-mode: difference;
+    background: transparent;
+}
+
 @media(max-width: 767px){
 
     .hamburger-menu{
