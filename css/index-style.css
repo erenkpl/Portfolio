@@ -83,6 +83,10 @@ body{
     top: -20%;
 }
 
+img{
+    filter: drop-shadow(15px 15px 30px rgba(0, 0, 0, 0.6));
+}
+
 .nav-buttons{
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
