@@ -1,6 +1,8 @@
 window.addEventListener('DOMContentLoaded', function(){
-    const foto = this.document.querySelector('.div-foto');
-    const yazi = this.document.querySelector('.yazi');
+    const foto = document.querySelector('.div-foto');
+    const yazi = document.querySelector('.yazi');
+    const hamburger = document.querySelector('.hamburger-menu');
+    const menu = document.querySelector('.mobile-nav');
 
     setTimeout(() => {
         foto.classList.add('show');
@@ -10,12 +12,9 @@ window.addEventListener('DOMContentLoaded', function(){
         yazi.classList.add('show');
     }, 1000);
 
+    hamburger.addEventListener('click', function(){
+        menu.classList.toggle('show');
+        hamburger.classList.toggle('active');
+    })
+
 });
-
-function toggleMenu(){
-    const menu = document.querySelector('.mobile-nav');
-    const hamburger = document.querySelector('.hamburger-menu');
-
-    menu.classList.toggle('show');
-    hamburger.classList.toggle('active');
-}
