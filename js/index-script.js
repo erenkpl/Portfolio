@@ -4,6 +4,16 @@ window.addEventListener('DOMContentLoaded', function(){
     const hamburger = document.querySelector('.hamburger-menu');
     const menu = document.querySelector('.mobile-nav');
 
+    menu.style.display = "none";
+
+    /* Bunlar kalkabilir*/
+    foto.classList.remove('show');
+    yazi.classList.remove('show');
+
+    setTimeout(() => {
+        menu.style.display = "block";
+    }, 200);
+
     setTimeout(() => {
         foto.classList.add('show');
     }, 400);

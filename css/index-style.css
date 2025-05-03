@@ -15,6 +15,10 @@ header{
     z-index: 10;
 }
 
+a{
+    text-decoration: none;
+}
+
 body{
     margin: 0;
     height: 100vh;
@@ -62,6 +66,7 @@ body{
     font-weight: 500;
     font-size: 30px;
     color: #909090;
+    margin-bottom: 20px;
 }
 
 .div-foto{
@@ -204,7 +209,6 @@ img{
     box-shadow: rgba(0, 0, 0, 0.2);
 }
 
-
 ul{
     display: flex;
     list-style: none;
@@ -226,6 +230,49 @@ ul{
     transition: opacity 1s ease, transform 1s ease;
     opacity: 1;
     transform: translateY(0);
+}
+
+.icon{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    padding: 2px;
+    filter: grayscale(100%) brightness(20%);
+    opacity: 0.8;
+    transition: filter 0.3s ease;
+}
+
+.link{
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 6px;
+    background-color: #C4C4C4;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.1), /* dış gölge */
+        inset 2px 2px 6px rgba(0, 0, 0, 0.2), /* iç koyu gölge */
+        inset -2px -2px 6px rgba(255, 255, 255, 0.3); 
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.link:hover{
+    transform: scale(1.05);
+}
+
+.link:hover .icon{
+    filter: grayscale(0%) brightness(80%);
+}
+
+.link:active{
+    transform: scale(0.95);
+}
+
+.on-bilgi{
+    /* Sonra dolacak */
 }
 
 footer p{
