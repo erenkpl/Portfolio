@@ -28,6 +28,13 @@ body{
         #000 50%
     );
     font-family: "Raleway", sans-serif;
+    background-size: 200% 100%;
+    background-position: 50% 0;
+    transition: background-position 1s ease;
+}
+
+body.gradient-expanded{
+    background-position: 6% 0;
 }
 
 .ust-div{
@@ -230,6 +237,26 @@ ul{
     transition: opacity 1s ease, transform 1s ease;
     opacity: 1;
     transform: translateY(0);
+}
+
+.div-foto.hide{
+    opacity: 0;
+    transform: translateX(50);
+    transition: opacity 0.5s ease, transform 0.3s ease;
+}
+
+.yazi.hide{
+    opacity: 0;
+    transform: translateX(50);
+    transition: opacity 0.5s ease, transorm 0.3s ease;
+}
+
+.ust-div.show{
+    visibility: visible;
+}
+
+.ust-div.hide{
+    visibility: hidden;
 }
 
 .icon{

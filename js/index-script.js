@@ -3,12 +3,10 @@ window.addEventListener('DOMContentLoaded', function(){
     const yazi = document.querySelector('.yazi');
     const hamburger = document.querySelector('.hamburger-menu');
     const menu = document.querySelector('.mobile-nav');
+    const ust_div = document.querySelector('.ust-div');
 
     menu.style.display = "none";
-
-    /* Bunlar kalkabilir*/
-    foto.classList.remove('show');
-    yazi.classList.remove('show');
+    ust_div.classList.add('show');
 
     setTimeout(() => {
         menu.style.display = "block";
