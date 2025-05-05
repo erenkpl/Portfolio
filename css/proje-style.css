@@ -1,7 +1,12 @@
 .proje{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     visibility: hidden;
-    color: #000;
     opacity: 0;
+    top: -100%;
+    position: relative;
     text-align: left;
     z-index: 1;
     transition: opacity 0.5s ease;

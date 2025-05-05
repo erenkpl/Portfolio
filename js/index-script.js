@@ -6,7 +6,6 @@ window.addEventListener('DOMContentLoaded', function(){
     const ust_div = document.querySelector('.ust-div');
 
     menu.style.display = "none";
-    ust_div.classList.add('show');
 
     setTimeout(() => {
         menu.style.display = "block";

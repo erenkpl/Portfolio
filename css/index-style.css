@@ -19,6 +19,10 @@ a{
     text-decoration: none;
 }
 
+html, body{
+    overflow: hidden;
+}
+
 body{
     margin: 0;
     height: 100vh;
@@ -251,12 +255,16 @@ ul{
     transition: opacity 0.5s ease, transorm 0.3s ease;
 }
 
-.ust-div.show{
+/*.ust-div.show{
     visibility: visible;
 }
 
 .ust-div.hide{
     visibility: hidden;
+} */
+
+.aktif{
+    display: flex;
 }
 
 .icon{

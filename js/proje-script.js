@@ -5,9 +5,10 @@ window.addEventListener('DOMContentLoaded', function(){
     const proje = document.querySelector('.proje');
     const ust_div = document.querySelector('.ust-div');
 
-    buton.addEventListener('click', function(){
+    const anasayfa = document.getElementById("giris");
+    const projesayfasi = document.getElementById("projeSayfasi")
 
-        ust_div.classList.add('hide');
+    buton.addEventListener('click', function(){
         
         setTimeout(() => {
             foto.classList.add('hide');
@@ -16,6 +17,11 @@ window.addEventListener('DOMContentLoaded', function(){
         setTimeout(() => {
             yazi.classList.add('hide');
         }, 200);
+
+        setTimeout(() => {
+            anasayfa.classList.remove('aktif');
+            proje.classList.add('aktif');
+        }, 400);
     
         setTimeout(() => {
             document.body.classList.add('gradient-expanded');
