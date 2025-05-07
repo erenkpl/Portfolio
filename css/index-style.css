@@ -1,18 +1,23 @@
 header{
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: space-between;
+}
+
+.header-buttons-home{
+    display: flex;
+    align-items: center;
+    mix-blend-mode: difference;
 }
 
 .header-buttons{
     display: flex;
     flex-direction: row;
-    justify-content: end;
     margin-top: 15px;
     margin-right: 15px;
     mix-blend-mode: difference;
     position: relative;
-    z-index: 10;
+    z-index: 100;
 }
 
 a{
@@ -39,6 +44,28 @@ body{
 
 body.gradient-expanded{
     background-position: 6% 0;
+}
+
+body.gradient-expanded-back{
+    background-position: 50% 0;
+}
+
+.sayfa {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 10;
+    left: 0;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 0.6s ease;
+    pointer-events: none;
+}
+
+.sayfa.aktif {
+    opacity: 1;
+    z-index: 10;
+    pointer-events: all;
 }
 
 .ust-div{
@@ -255,18 +282,6 @@ ul{
     transition: opacity 0.5s ease, transorm 0.3s ease;
 }
 
-/*.ust-div.show{
-    visibility: visible;
-}
-
-.ust-div.hide{
-    visibility: hidden;
-} */
-
-.aktif{
-    display: flex;
-}
-
 .icon{
     display: inline-block;
     width: 28px;
@@ -310,10 +325,12 @@ ul{
     /* Sonra dolacak */
 }
 
-footer p{
+footer{
+    position: relative;
     text-align: center;
     font-size: 9px;
     background: transparent;
+    mix-blend-mode: difference;
 }
 
 footer p{
