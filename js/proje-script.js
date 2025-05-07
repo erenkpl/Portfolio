@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', function(){
         setTimeout(() => {
             HomeButton.classList.remove('show');
             HomeButton.classList.add('hide');
-        }, 100);
+        }, 200);
 
         proje_kutusu.forEach((kutu, index) => {
             setTimeout(() => {
@@ -55,7 +55,7 @@ window.addEventListener('DOMContentLoaded', function(){
         setTimeout(() => {
             foto.classList.remove('hide');
             foto.classList.add('show');
-        }, 800);
+        }, 1000);
     
         setTimeout(() => {
             yazi.classList.remove('hide');
