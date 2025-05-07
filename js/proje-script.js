@@ -9,6 +9,7 @@ window.addEventListener('DOMContentLoaded', function(){
     const proje_kutusu = document.querySelectorAll('.proje-kutusu');
 
     menu.style.display = "none";
+    HomeButton.classList.add('hide');
 
     setTimeout(() => {
         menu.style.display = "block";
@@ -30,17 +31,22 @@ window.addEventListener('DOMContentLoaded', function(){
     // Anasayfaya dönüş işlemi
     HomeButton.addEventListener('click', function() {
 
+        setTimeout(() => {
+            HomeButton.classList.remove('show');
+            HomeButton.classList.add('hide');
+        }, 100);
+
         proje_kutusu.forEach((kutu, index) => {
             setTimeout(() => {
                 kutu.classList.remove('show');
                 kutu.classList.add('hide');
-            }, 300 + index * 100);
+            }, 200 + index * 100);
         });
 
         setTimeout(() => {
             projesayfasi.classList.remove('aktif'); 
             anasayfa.classList.add('aktif');
-        }, 500);
+        }, 400);
 
         setTimeout(() => {
             document.body.classList.toggle('gradient-expanded', false);

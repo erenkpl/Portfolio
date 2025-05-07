@@ -7,12 +7,13 @@ header{
 .header-buttons-home{
     display: flex;
     align-items: center;
-    mix-blend-mode: difference;
 }
 
 .header-buttons{
     display: flex;
     flex-direction: row;
+    justify-content: end;
+    align-items: baseline;
     margin-top: 15px;
     margin-right: 15px;
     mix-blend-mode: difference;
@@ -247,6 +248,33 @@ img{
     box-shadow: rgba(0, 0, 0, 0.2);
 }
 
+.home-button{
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.icon-home{
+    width: 30px;
+    height: 30px;
+}
+
+#home-butonu.show{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+#home-butonu.hide{
+    visibility: visible;
+    opacity: 0;
+    transform: opacity 0.3s ease;
+    cursor: default;
+}
+
 ul{
     display: flex;
     list-style: none;
@@ -270,16 +298,18 @@ ul{
     transform: translateY(0);
 }
 
-.div-foto.hide{
+.yazi.hide {
+    visibility: visible;
     opacity: 0;
-    transform: translateX(50);
-    transition: opacity 0.5s ease, transform 0.3s ease;
+    transform: translateY(50px);
+    transition: opacity 0.4s ease, transform 0.5s ease;
 }
 
-.yazi.hide{
+.div-foto.hide {
+    visibility: visible;
     opacity: 0;
-    transform: translateX(50);
-    transition: opacity 0.5s ease, transorm 0.3s ease;
+    transform: translateY(50px);
+    transition: opacity 0.4s ease, transform 0.5s ease;
 }
 
 .icon{
