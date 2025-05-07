@@ -45,6 +45,12 @@
     transform: translateY(0);
 }
 
+.proje-kutusu.hide{
+    opacity: 0;
+    transform: translateX(50);
+    transition: opacity 0.2s ease, transform 0.3s ease;
+}
+
 .proje-kutusu:hover{
     transform: scale(1.05);
     transition: transform 0.3s ease;

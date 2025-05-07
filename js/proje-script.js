@@ -6,6 +6,7 @@ window.addEventListener('DOMContentLoaded', function(){
     const menu = document.querySelector('.mobile-nav');
     const anasayfa = document.getElementById("giris");
     const projesayfasi = document.getElementById("projeSayfasi");
+    const proje_kutusu = document.querySelectorAll('.proje-kutusu');
 
     menu.style.display = "none";
 
@@ -28,20 +29,30 @@ window.addEventListener('DOMContentLoaded', function(){
 
     // Anasayfaya dönüş işlemi
     HomeButton.addEventListener('click', function() {
+
+        proje_kutusu.forEach((kutu, index) => {
+            setTimeout(() => {
+                kutu.classList.remove('show');
+                kutu.classList.add('hide');
+            }, 300 + index * 100);
+        });
+
         setTimeout(() => {
             projesayfasi.classList.remove('aktif'); 
             anasayfa.classList.add('aktif');
-        }, 400);
+        }, 500);
 
         setTimeout(() => {
-            document.body.classList.add('gradient-expanded-back');
+            document.body.classList.toggle('gradient-expanded', false);
         }, 600);
     
         setTimeout(() => {
+            foto.classList.remove('hide');
             foto.classList.add('show');
         }, 800);
     
         setTimeout(() => {
+            yazi.classList.remove('hide');
             yazi.classList.add('show');
         }, 1200);
     
