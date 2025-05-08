@@ -2,10 +2,12 @@ window.addEventListener('DOMContentLoaded', function(){
     const HomeButton = document.getElementById("home-butonu");
     const foto = document.querySelector('.div-foto');
     const yazi = document.querySelector('.yazi');
+    const info = document.querySelector('.info');
     const hamburger = document.querySelector('.hamburger-menu');
     const menu = document.querySelector('.mobile-nav');
     const anasayfa = document.getElementById("giris");
     const projesayfasi = document.getElementById("projeSayfasi");
+    const infoSayfasi = document.getElementById("infoSayfasi");
     const proje_kutusu = document.querySelectorAll('.proje-kutusu');
 
     menu.style.display = "none";
@@ -44,7 +46,10 @@ window.addEventListener('DOMContentLoaded', function(){
         });
 
         setTimeout(() => {
+            info.classList.remove('show');
+            info.classList.add('hide');
             projesayfasi.classList.remove('aktif'); 
+            infoSayfasi.classList.remove('aktif');
             anasayfa.classList.add('aktif');
         }, 400);
 

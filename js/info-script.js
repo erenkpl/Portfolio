@@ -1,14 +1,14 @@
 window.addEventListener('DOMContentLoaded', function() {
     const HomeButton = document.getElementById("home-butonu");
-    const buton_info = document.getElementById("hakkimdaButon");
+    const buton_info = document.getElementById("infoButon");
     const foto = document.querySelector('.div-foto');
     const yazi = document.querySelector('.yazi');
-    const info = document.querySelector('.hakkimda');
+    const info = document.querySelector('.info');
     const proje_kutusu = document.querySelectorAll('.proje-kutusu');
 
     const anasayfa = document.getElementById("giris");
     const projesayfasi = document.getElementById("projeSayfasi");
-    const hakkimdaSayfasi = document.getElementById("hakkimdaSayfasi");
+    const infoSayfasi = document.getElementById("infoSayfasi");
 
     const currentPage = localStorage.getItem("currentPage");
 
@@ -22,22 +22,18 @@ window.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             anasayfa.classList.remove('aktif');
             projesayfasi.classList.remove('aktif');
-            hakkimdaSayfasi.classList.add('aktif');
+            infoSayfasi.classList.add('aktif');
         }, 100);
 
         setTimeout(() => {
+            document.body.classList.toggle('gradient-expanded', false);
             document.body.classList.toggle('gradient-black', true);
         }, 100);
 
         setTimeout(() => {
+            info.classList.remove('hide');
             info.classList.add('show');
         }, 600);
-
-        proje_kutusu.forEach((kutu, index) => {
-            setTimeout(() => {
-                kutu.classList.add('show');
-            }, 800 + index * 100);
-        });
 
         setTimeout(() => {
             HomeButton.classList.remove('hide');
@@ -67,7 +63,7 @@ window.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             anasayfa.classList.remove('aktif');
             projesayfasi.classList.remove('aktif');
-            hakkimdaSayfasi.classList.add('aktif');
+            infoSayfasi.classList.add('aktif');
         }, 500);
 
         setTimeout(() => {

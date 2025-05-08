@@ -4,10 +4,12 @@ window.addEventListener('DOMContentLoaded', function() {
     const foto = document.querySelector('.div-foto');
     const yazi = document.querySelector('.yazi');
     const proje = document.querySelector('.proje');
+    const info = document.querySelector('.info');
     const proje_kutusu = document.querySelectorAll('.proje-kutusu');
 
     const anasayfa = document.getElementById("giris");
     const projesayfasi = document.getElementById("projeSayfasi");
+    const infoSayfasi = document.getElementById("infoSayfasi");
 
     const currentPage = localStorage.getItem("currentPage");
 
@@ -17,9 +19,12 @@ window.addEventListener('DOMContentLoaded', function() {
         foto.classList.add('hide');
         yazi.classList.remove('show');
         yazi.classList.add('hide');
+        info.classList.remove('show');
+        info.classList.add('hide');
         
         setTimeout(() => {
             anasayfa.classList.remove('aktif');
+            infoSayfasi.classList.remove('aktif');
             projesayfasi.classList.add('aktif');
         }, 100);
 
@@ -53,10 +58,13 @@ window.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             yazi.classList.remove('show');
             yazi.classList.add('hide');
+            info.classList.remove('show');
+            info.classList.add('hide');
         }, 400);
 
         setTimeout(() => {
             anasayfa.classList.remove('aktif');
+            infoSayfasi.classList.remove('aktif');
             projesayfasi.classList.add('aktif');
         }, 500);
 

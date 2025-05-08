@@ -51,10 +51,6 @@ body.gradient-expanded{
     background-position: 6% 0;
 }
 
-body.gradient-expanded-back{
-    background-position: 50% 0;
-}
-
 .sayfa {
     position: absolute;
     width: 100%;
