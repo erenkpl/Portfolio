@@ -4,6 +4,8 @@ window.addEventListener('DOMContentLoaded', function() {
     const foto = document.querySelector('.div-foto');
     const yazi = document.querySelector('.yazi');
     const info = document.querySelector('.info');
+    const info_baslık = document.querySelector('.info-baslik');
+    const proje = document.querySelector('.proje');
     const proje_kutusu = document.querySelectorAll('.proje-kutusu');
 
     const anasayfa = document.getElementById("giris");
@@ -12,12 +14,14 @@ window.addEventListener('DOMContentLoaded', function() {
 
     const currentPage = localStorage.getItem("currentPage");
 
-    if (currentPage === "hakkimdaSayfasi") {
+    if (currentPage === "infoSayfasi") {
 
         foto.classList.remove('show');
         foto.classList.add('hide');
         yazi.classList.remove('show');
         yazi.classList.add('hide');
+        proje.classList.remove('show');
+        proje.classList.add('hide');
         
         setTimeout(() => {
             anasayfa.classList.remove('aktif');
@@ -33,6 +37,8 @@ window.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             info.classList.remove('hide');
             info.classList.add('show');
+            info_baslık.classList.remove('hide');
+            info_baslık.classList.add('show');
         }, 600);
 
         setTimeout(() => {
@@ -58,6 +64,13 @@ window.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             yazi.classList.remove('show');
             yazi.classList.add('hide');
+            proje.classList.remove('show');
+            proje.classList.add('hide');
+        }, 400);
+
+        setTimeout(() => {
+            document.body.classList.toggle('gradient-expanded', false);
+            document.body.classList.toggle('gradient-black', true);
         }, 400);
 
         setTimeout(() => {
@@ -67,14 +80,14 @@ window.addEventListener('DOMContentLoaded', function() {
         }, 500);
 
         setTimeout(() => {
-            document.body.classList.toggle('gradient-expanded', false);
-            document.body.classList.toggle('gradient-black', true);
-        }, 600);
-
-        setTimeout(() => {
             info.classList.remove('hide');
             info.classList.add('show');
         }, 800);
+
+        setTimeout(() => {
+            info_baslık.classList.remove('hide');
+            info_baslık.classList.add('show');
+        }, 1000);
 
         setTimeout(() => {
             HomeButton.classList.remove('hide');
@@ -82,6 +95,6 @@ window.addEventListener('DOMContentLoaded', function() {
         }, 1200);
 
         // Sayfa durumu kaydediliyor
-        localStorage.setItem("currentPage", "hakkimdaSayfasi");
+        localStorage.setItem("currentPage", "infoSayfasi");
     });
 });

@@ -5,9 +5,12 @@
     align-items: center;
     visibility: hidden;
     width: 80%;
-    position: relative;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
     text-align: left;
-    z-index: 1;
     transition: opacity 0.6s ease-in-out;
 }
 
@@ -27,6 +30,23 @@
     color: #C4C4C4;
     text-align: center;
     font-weight: 600;
-    font-size: 60px;
+    font-size: 40px;
     mix-blend-mode: difference;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: transform 0.5s ease, opacity 0.8s ease;
+}
+
+.info-baslik.show{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 0.5s ease, opacity 0.8s ease;
+}
+
+.info-baslik.hide{
+    visibility: visible;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: transform 0.3s ease, opacity 0.5s ease;
 }

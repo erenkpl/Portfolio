@@ -55,7 +55,6 @@ body.gradient-expanded{
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 10;
     left: 0;
     opacity: 0;
     z-index: 0;
@@ -151,12 +150,12 @@ img{
     transition: transform ease 0.3s, ease 0.3s;
 }
 
-.nav-buttons:hover, .home-button:hover{
+.nav-buttons:hover{
     color: #9b9b9b;
     transform: scale(1.05);
 }
 
-.nav-buttons:active, .home-button:active{
+.nav-buttons:active{
     transform: scale(0.95);
 }
 
@@ -255,6 +254,7 @@ img{
     box-shadow: none;
     cursor: pointer;
     margin: 20px;
+    z-index: 20;
     transition: transform ease 0.4s, opacity ease 0.4s;
 }
 

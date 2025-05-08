@@ -5,6 +5,7 @@ window.addEventListener('DOMContentLoaded', function() {
     const yazi = document.querySelector('.yazi');
     const proje = document.querySelector('.proje');
     const info = document.querySelector('.info');
+    const info_baslık = document.querySelector('.info-baslik');
     const proje_kutusu = document.querySelectorAll('.proje-kutusu');
 
     const anasayfa = document.getElementById("giris");
@@ -56,10 +57,7 @@ window.addEventListener('DOMContentLoaded', function() {
         }, 200);
 
         setTimeout(() => {
-            yazi.classList.remove('show');
-            yazi.classList.add('hide');
-            info.classList.remove('show');
-            info.classList.add('hide');
+            
         }, 400);
 
         setTimeout(() => {
@@ -69,6 +67,12 @@ window.addEventListener('DOMContentLoaded', function() {
         }, 500);
 
         setTimeout(() => {
+            yazi.classList.remove('show');
+            yazi.classList.add('hide');
+            info.classList.remove('show');
+            info.classList.add('hide');
+            info_baslık.classList.remove('show');
+            info_baslık.classList.add('hide');
             document.body.classList.toggle('gradient-expanded', true);
         }, 600);
 
