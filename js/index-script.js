@@ -12,30 +12,35 @@ window.addEventListener('DOMContentLoaded', function() {
     const currentPage = localStorage.getItem("currentPage");
 
     if (currentPage === "projeSayfasi") {
+
+        foto.classList.remove('show');
+        foto.classList.add('hide');
+        yazi.classList.remove('show');
+        yazi.classList.add('hide');
         
         setTimeout(() => {
             anasayfa.classList.remove('aktif');
             projesayfasi.classList.add('aktif');
-        }, 400);
+        }, 100);
 
         setTimeout(() => {
             document.body.classList.toggle('gradient-expanded', true);
-        }, 600);
+        }, 100);
 
         setTimeout(() => {
             proje.classList.add('show');
-        }, 1000);
+        }, 600);
 
         proje_kutusu.forEach((kutu, index) => {
             setTimeout(() => {
                 kutu.classList.add('show');
-            }, 1200 + index * 100);
+            }, 800 + index * 100);
         });
 
         setTimeout(() => {
             HomeButton.classList.remove('hide');
             HomeButton.classList.add('show');
-        }, 1400);
+        }, 900);
     }
 
     buton_proje.addEventListener('click', function() {

@@ -366,9 +366,13 @@ ul{
 }
 
 footer{
-    position: relative;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
     text-align: center;
-    font-size: 9px;
+    font-size: 12px;
     background: transparent;
     mix-blend-mode: difference;
 }
