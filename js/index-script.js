@@ -51,6 +51,7 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 
     buton_proje.addEventListener('click', function() {
+        
         setTimeout(() => {
             foto.classList.remove('show');
             foto.classList.add('hide');

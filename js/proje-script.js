@@ -19,10 +19,12 @@ window.addEventListener('DOMContentLoaded', function(){
     }, 200);
 
     setTimeout(() => {
+        foto.classList.remove('hide');
         foto.classList.add('show');
     }, 400);
 
     setTimeout(() => {
+        yazi.classList.remove('hide');
         yazi.classList.add('show');
     }, 1000);
 
