@@ -43,6 +43,10 @@ body{
     transition: background-position 1s ease;
 }
 
+body.gradient-black{
+    background-position: 94% 0;
+}
+
 body.gradient-expanded{
     background-position: 6% 0;
 }

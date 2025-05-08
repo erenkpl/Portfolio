@@ -50,6 +50,7 @@ window.addEventListener('DOMContentLoaded', function(){
 
         setTimeout(() => {
             document.body.classList.toggle('gradient-expanded', false);
+            document.body.classList.toggle('gradient-black', false);
         }, 600);
     
         setTimeout(() => {

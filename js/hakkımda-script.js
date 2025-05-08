@@ -1,17 +1,18 @@
 window.addEventListener('DOMContentLoaded', function() {
     const HomeButton = document.getElementById("home-butonu");
-    const buton_proje = document.getElementById("projeButon");
+    const buton_info = document.getElementById("hakkimdaButon");
     const foto = document.querySelector('.div-foto');
     const yazi = document.querySelector('.yazi');
-    const proje = document.querySelector('.proje');
+    const info = document.querySelector('.hakkimda');
     const proje_kutusu = document.querySelectorAll('.proje-kutusu');
 
     const anasayfa = document.getElementById("giris");
     const projesayfasi = document.getElementById("projeSayfasi");
+    const hakkimdaSayfasi = document.getElementById("hakkimdaSayfasi");
 
     const currentPage = localStorage.getItem("currentPage");
 
-    if (currentPage === "projeSayfasi") {
+    if (currentPage === "hakkimdaSayfasi") {
 
         foto.classList.remove('show');
         foto.classList.add('hide');
@@ -20,16 +21,16 @@ window.addEventListener('DOMContentLoaded', function() {
         
         setTimeout(() => {
             anasayfa.classList.remove('aktif');
-            projesayfasi.classList.add('aktif');
+            projesayfasi.classList.remove('aktif');
+            hakkimdaSayfasi.classList.add('aktif');
         }, 100);
 
         setTimeout(() => {
-            document.body.classList.toggle('gradient-black', false);
-            document.body.classList.toggle('gradient-expanded', true);
+            document.body.classList.toggle('gradient-black', true);
         }, 100);
 
         setTimeout(() => {
-            proje.classList.add('show');
+            info.classList.add('show');
         }, 600);
 
         proje_kutusu.forEach((kutu, index) => {
@@ -44,7 +45,15 @@ window.addEventListener('DOMContentLoaded', function() {
         }, 900);
     }
 
-    buton_proje.addEventListener('click', function() {
+    buton_info.addEventListener('click', function() {
+
+        proje_kutusu.forEach((kutu, index) => {
+            setTimeout(() => {
+                kutu.classList.remove('show');
+                kutu.classList.add('hide');
+            }, 200 + index * 100);
+        });
+
         setTimeout(() => {
             foto.classList.remove('show');
             foto.classList.add('hide');
@@ -57,24 +66,19 @@ window.addEventListener('DOMContentLoaded', function() {
 
         setTimeout(() => {
             anasayfa.classList.remove('aktif');
-            projesayfasi.classList.add('aktif');
+            projesayfasi.classList.remove('aktif');
+            hakkimdaSayfasi.classList.add('aktif');
         }, 500);
 
         setTimeout(() => {
-            document.body.classList.toggle('gradient-expanded', true);
+            document.body.classList.toggle('gradient-expanded', false);
+            document.body.classList.toggle('gradient-black', true);
         }, 600);
 
         setTimeout(() => {
-            proje.classList.remove('hide');
-            proje.classList.add('show');
+            info.classList.remove('hide');
+            info.classList.add('show');
         }, 800);
-
-        proje_kutusu.forEach((kutu, index) => {
-            setTimeout(() => {
-                kutu.classList.remove('hide');
-                kutu.classList.add('show');
-            }, 1000 + index * 100);
-        });
 
         setTimeout(() => {
             HomeButton.classList.remove('hide');
@@ -82,6 +86,6 @@ window.addEventListener('DOMContentLoaded', function() {
         }, 1200);
 
         // Sayfa durumu kaydediliyor
-        localStorage.setItem("currentPage", "projeSayfasi");
+        localStorage.setItem("currentPage", "hakkimdaSayfasi");
     });
 });
