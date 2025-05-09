@@ -112,7 +112,8 @@ window.addEventListener('DOMContentLoaded', function() {
         }, 200);
 
         setTimeout(() => {
-            
+            yazi.classList.remove('show');
+            yazi.classList.add('hide');
         }, 400);
 
         setTimeout(() => {
@@ -122,8 +123,6 @@ window.addEventListener('DOMContentLoaded', function() {
         }, 500);
 
         setTimeout(() => {
-            yazi.classList.remove('show');
-            yazi.classList.add('hide');
             info.classList.remove('show');
             info.classList.add('hide');
             info_baslık.classList.remove('show');

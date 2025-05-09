@@ -85,7 +85,7 @@
         display: flex;
         position: absolute;
         top: 10px;
-        right: 10px; /* Sağa yasla */
+        right: 10px;
         left: auto;
     }
 
@@ -96,12 +96,11 @@
     .header-buttons-home {
         position: absolute;
         top: 10px;
-        left: 10px; /* Home butonu sola */
+        left: 10px;
     }
     
     .ust-div{
         flex-direction: column-reverse;
-        padding: 0 10px;
         margin-top: 50px;
     }
 
@@ -115,9 +114,9 @@
         justify-content: center;
         align-items: center;
         width: 80%;
-        color: #656565;
+        color: #c4c4c4;
         mix-blend-mode: difference;
-        left: 0;
+        left: -5%;
     }
 
     #merhaba{
@@ -132,5 +131,11 @@
     #bilgi{
         color: #656565;
         font-size: 20px;
+    }
+
+    .proje{
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
     }
 }
