@@ -6,6 +6,7 @@
     width: 25px;
     height: 20px;
     cursor: pointer;
+    mix-blend-mode: difference;
     z-index: 20;
     transition: transform 0.3s ease;
 }
@@ -114,7 +115,7 @@
         justify-content: center;
         align-items: center;
         width: 80%;
-        color: #C4C4C4;
+        color: #656565;
         mix-blend-mode: difference;
         left: 0;
     }
@@ -129,6 +130,7 @@
     }
 
     #bilgi{
+        color: #656565;
         font-size: 20px;
     }
 }
