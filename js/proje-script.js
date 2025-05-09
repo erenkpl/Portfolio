@@ -12,11 +12,11 @@ window.addEventListener('DOMContentLoaded', function(){
     const proje_kutusu = document.querySelectorAll('.proje-kutusu');
 
     menu.style.display = "none";
-    HomeButton.classList.add('hide');
 
     setTimeout(() => {
         menu.style.display = "block";
-    }, 200);
+        HomeButton.style.visibility = "visible";
+    }, 500);
 
     setTimeout(() => {
         foto.classList.remove('hide');

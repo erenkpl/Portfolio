@@ -173,6 +173,8 @@ img{
     outline: none;
     box-shadow: none;
     cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
     margin: 20px;
     z-index: 20;
     transition: transform ease 0.4s, opacity ease 0.4s;
