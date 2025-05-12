@@ -5,7 +5,8 @@ window.addEventListener('DOMContentLoaded', function() {
     const foto = document.querySelector('.div-foto');
     const yazi = document.querySelector('.yazi');
     const info = document.querySelector('.info');
-    const info_baslık = document.querySelector('.info-baslik');
+    const info_baslik = document.querySelector('.info-baslik');
+    const info_yazi = document.querySelector('.info-text');
     const proje = document.querySelector('.proje');
     const proje_kutusu = document.querySelectorAll('.proje-kutusu');
     const hamburger = document.querySelector('.hamburger-menu');
@@ -19,12 +20,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     if (currentPage === "infoSayfasi") {
 
-        foto.classList.remove('show');
-        foto.classList.add('hide');
-        yazi.classList.remove('show');
-        yazi.classList.add('hide');
-        proje.classList.remove('show');
-        proje.classList.add('hide');
+        /* reload_info(); Gerekirse kullan! */
         
         setTimeout(() => {
             anasayfa.classList.remove('aktif');
@@ -35,14 +31,23 @@ window.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             document.body.classList.toggle('gradient-expanded', false);
             document.body.classList.toggle('gradient-black', true);
-        }, 100);
+        }, 200);
 
         setTimeout(() => {
             info.classList.remove('hide');
             info.classList.add('show');
-            info_baslık.classList.remove('hide');
-            info_baslık.classList.add('show');
+            
         }, 600);
+
+        setTimeout(() => {
+            info_baslik.classList.remove('hide');
+            info_baslik.classList.add('show');
+        }, 800);
+
+        setTimeout(() => {
+            info_yazi.classList.remove('hide');
+            info_yazi.classList.add('show');
+        }, 900);
 
         setTimeout(() => {
             HomeButton.classList.remove('hide');
@@ -60,13 +65,13 @@ window.addEventListener('DOMContentLoaded', function() {
         });
 
         setTimeout(() => {
-            foto.classList.remove('show');
-            foto.classList.add('hide');
+            yazi.classList.remove('show');
+            yazi.classList.add('hide');
         }, 200);
 
         setTimeout(() => {
-            yazi.classList.remove('show');
-            yazi.classList.add('hide');
+            foto.classList.remove('show');
+            foto.classList.add('hide');
             proje.classList.remove('show');
             proje.classList.add('hide');
         }, 400);
@@ -88,9 +93,14 @@ window.addEventListener('DOMContentLoaded', function() {
         }, 800);
 
         setTimeout(() => {
-            info_baslık.classList.remove('hide');
-            info_baslık.classList.add('show');
+            info_baslik.classList.remove('hide');
+            info_baslik.classList.add('show');
         }, 1000);
+
+        setTimeout(() => {
+            info_yazi.classList.remove('hide');
+            info_yazi.classList.add('show');
+        }, 1200);
 
         setTimeout(() => {
             HomeButton.classList.remove('hide');
@@ -114,13 +124,13 @@ window.addEventListener('DOMContentLoaded', function() {
         });
 
         setTimeout(() => {
-            foto.classList.remove('show');
-            foto.classList.add('hide');
+            yazi.classList.remove('show');
+            yazi.classList.add('hide');
         }, 200);
 
         setTimeout(() => {
-            yazi.classList.remove('show');
-            yazi.classList.add('hide');
+            foto.classList.remove('show');
+            foto.classList.add('hide');
             proje.classList.remove('show');
             proje.classList.add('hide');
         }, 400);
@@ -142,9 +152,14 @@ window.addEventListener('DOMContentLoaded', function() {
         }, 800);
 
         setTimeout(() => {
-            info_baslık.classList.remove('hide');
-            info_baslık.classList.add('show');
+            info_baslik.classList.remove('hide');
+            info_baslik.classList.add('show');
         }, 1000);
+
+        setTimeout(() => {
+            info_yazi.classList.remove('hide');
+            info_yazi.classList.add('show');
+        }, 1100);
 
         setTimeout(() => {
             HomeButton.classList.remove('hide');
@@ -154,4 +169,13 @@ window.addEventListener('DOMContentLoaded', function() {
         // Sayfa durumu kaydediliyor
         localStorage.setItem("currentPage", "infoSayfasi");
     });
+
+    function reload_info(){
+        foto.classList.remove('show');
+        foto.classList.add('hide');
+        yazi.classList.remove('show');
+        yazi.classList.add('hide');
+        proje.classList.remove('show');
+        proje.classList.add('hide');
+    }
 });

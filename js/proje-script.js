@@ -6,7 +6,8 @@ window.addEventListener('DOMContentLoaded', function() {
     const yazi = document.querySelector('.yazi');
     const proje = document.querySelector('.proje');
     const info = document.querySelector('.info');
-    const info_baslık = document.querySelector('.info-baslik');
+    const info_baslik = document.querySelector('.info-baslik');
+    const info_yazi = document.querySelector('.info-text');
     const proje_kutusu = document.querySelectorAll('.proje-kutusu');
     const hamburger = document.querySelector('.hamburger-menu');
     const menu = document.querySelector('.mobile-nav');
@@ -17,14 +18,9 @@ window.addEventListener('DOMContentLoaded', function() {
 
     const currentPage = localStorage.getItem("currentPage");
 
-    if (currentPage === "projeSayfasi") {
+    /* reload_proje();  gerekirse kullan!*/
 
-        foto.classList.remove('show');
-        foto.classList.add('hide');
-        yazi.classList.remove('show');
-        yazi.classList.add('hide');
-        info.classList.remove('show');
-        info.classList.add('hide');
+    if (currentPage === "projeSayfasi") {
         
         setTimeout(() => {
             anasayfa.classList.remove('aktif');
@@ -56,12 +52,22 @@ window.addEventListener('DOMContentLoaded', function() {
     buton_proje.addEventListener('click', function() {
         
         setTimeout(() => {
-            foto.classList.remove('show');
-            foto.classList.add('hide');
+            yazi.classList.remove('show');
+            yazi.classList.add('hide');
         }, 200);
 
         setTimeout(() => {
-            
+            foto.classList.remove('show');
+            foto.classList.add('hide');
+        }, 400);
+
+        setTimeout(() => {
+            info.classList.remove('show');
+            info.classList.add('hide');
+            info_baslik.classList.remove('show');
+            info_baslik.classList.add('hide');
+            info_yazi.classList.remove('show');
+            info_yazi.classList.add('hide');
         }, 400);
 
         setTimeout(() => {
@@ -71,12 +77,7 @@ window.addEventListener('DOMContentLoaded', function() {
         }, 500);
 
         setTimeout(() => {
-            yazi.classList.remove('show');
-            yazi.classList.add('hide');
-            info.classList.remove('show');
-            info.classList.add('hide');
-            info_baslık.classList.remove('show');
-            info_baslık.classList.add('hide');
+            document.body.classList.toggle('gradient-black', false);
             document.body.classList.toggle('gradient-expanded', true);
         }, 600);
 
@@ -105,15 +106,24 @@ window.addEventListener('DOMContentLoaded', function() {
 
         menu.classList.toggle('show');
         hamburger.classList.toggle('active');
-        
-        setTimeout(() => {
-            foto.classList.remove('show');
-            foto.classList.add('hide');
-        }, 200);
 
         setTimeout(() => {
             yazi.classList.remove('show');
             yazi.classList.add('hide');
+        }, 200);
+        
+        setTimeout(() => {
+            foto.classList.remove('show');
+            foto.classList.add('hide');
+        }, 400);
+
+        setTimeout(() => {
+            info.classList.remove('show');
+            info.classList.add('hide');
+            info_baslik.classList.remove('show');
+            info_baslik.classList.add('hide');
+            info_yazi.classList.remove('show');
+            info_yazi.classList.add('hide');
         }, 400);
 
         setTimeout(() => {
@@ -123,10 +133,6 @@ window.addEventListener('DOMContentLoaded', function() {
         }, 500);
 
         setTimeout(() => {
-            info.classList.remove('show');
-            info.classList.add('hide');
-            info_baslık.classList.remove('show');
-            info_baslık.classList.add('hide');
             document.body.classList.toggle('gradient-expanded', true);
         }, 600);
 
@@ -150,4 +156,13 @@ window.addEventListener('DOMContentLoaded', function() {
         // Sayfa durumu kaydediliyor
         localStorage.setItem("currentPage", "projeSayfasi");
     });
+
+    function reload_proje(){
+        foto.classList.remove('show');
+        foto.classList.add('hide');
+        yazi.classList.remove('show');
+        yazi.classList.add('hide');
+        info.classList.remove('show');
+        info.classList.add('hide');
+    }
 });

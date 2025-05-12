@@ -105,7 +105,7 @@
     
     .ust-div{
         flex-direction: column-reverse;
-        margin-top: 50px;
+        margin-top: 25px;
         padding: 0;
         padding-right: 50px;
     }
@@ -142,8 +142,12 @@
 
     .proje{
         width: 100%;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+    }
+
+    .info{
+        flex-direction: column;
     }
 }

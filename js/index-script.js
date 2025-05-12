@@ -3,7 +3,8 @@ window.addEventListener('DOMContentLoaded', function(){
     const foto = document.querySelector('.div-foto');
     const yazi = document.querySelector('.yazi');
     const info = document.querySelector('.info');
-    const info_baslık = document.querySelector('.info-baslik');
+    const info_baslik = document.querySelector('.info-baslik');
+    const info_yazi = document.querySelector('.info-text');
     const hamburger = document.querySelector('.hamburger-menu');
     const menu = document.querySelector('.mobile-nav');
     const anasayfa = document.getElementById("giris");
@@ -45,20 +46,25 @@ window.addEventListener('DOMContentLoaded', function(){
             setTimeout(() => {
                 kutu.classList.remove('show');
                 kutu.classList.add('hide');
-            }, 500 + index * 100);
+            }, 300 + index * 100);
         });
+
+        setTimeout(() => {
+            info.classList.remove('show');
+            info.classList.add('hide');
+            info_baslik.classList.remove('show');
+            info_baslik.classList.add('hide');
+            info_yazi.classList.remove('show');
+            info_yazi.classList.add('hide');
+        }, 400);
 
         setTimeout(() => {
             projesayfasi.classList.remove('aktif'); 
             infoSayfasi.classList.remove('aktif');
             anasayfa.classList.add('aktif');
-        }, 400);
+        }, 500);
 
         setTimeout(() => {
-            info.classList.remove('show');
-            info.classList.add('hide');
-            info_baslık.classList.remove('show');
-            info_baslık.classList.add('hide');
             document.body.classList.toggle('gradient-expanded', false);
             document.body.classList.toggle('gradient-black', false);
         }, 600);
