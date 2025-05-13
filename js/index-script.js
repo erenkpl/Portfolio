@@ -54,6 +54,9 @@ window.addEventListener('DOMContentLoaded', function(){
             info.classList.add('hide');
             info_baslik.classList.remove('show');
             info_baslik.classList.add('hide');
+        }, 300);
+
+        setTimeout(() => {
             info_yazi.classList.remove('show');
             info_yazi.classList.add('hide');
         }, 400);

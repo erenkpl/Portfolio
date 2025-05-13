@@ -66,6 +66,9 @@ window.addEventListener('DOMContentLoaded', function() {
             info.classList.add('hide');
             info_baslik.classList.remove('show');
             info_baslik.classList.add('hide');
+        }, 300);
+
+        setTimeout(() => {
             info_yazi.classList.remove('show');
             info_yazi.classList.add('hide');
         }, 400);
@@ -122,6 +125,9 @@ window.addEventListener('DOMContentLoaded', function() {
             info.classList.add('hide');
             info_baslik.classList.remove('show');
             info_baslik.classList.add('hide');
+        }, 300);
+
+        setTimeout(() => {
             info_yazi.classList.remove('show');
             info_yazi.classList.add('hide');
         }, 400);
@@ -133,6 +139,7 @@ window.addEventListener('DOMContentLoaded', function() {
         }, 500);
 
         setTimeout(() => {
+            document.body.classList.toggle('gradient-black', false);
             document.body.classList.toggle('gradient-expanded', true);
         }, 600);
 

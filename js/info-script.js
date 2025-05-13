@@ -85,27 +85,24 @@ window.addEventListener('DOMContentLoaded', function() {
             anasayfa.classList.remove('aktif');
             projesayfasi.classList.remove('aktif');
             infoSayfasi.classList.add('aktif');
-        }, 500);
-
-        setTimeout(() => {
             info.classList.remove('hide');
             info.classList.add('show');
-        }, 800);
+        }, 500);
 
         setTimeout(() => {
             info_baslik.classList.remove('hide');
             info_baslik.classList.add('show');
-        }, 1000);
+        }, 600);
 
         setTimeout(() => {
             info_yazi.classList.remove('hide');
             info_yazi.classList.add('show');
-        }, 1200);
+        }, 800);
 
         setTimeout(() => {
             HomeButton.classList.remove('hide');
             HomeButton.classList.add('show');
-        }, 1200);
+        }, 800);
 
         // Sayfa durumu kaydediliyor
         localStorage.setItem("currentPage", "infoSayfasi");
@@ -144,27 +141,24 @@ window.addEventListener('DOMContentLoaded', function() {
             anasayfa.classList.remove('aktif');
             projesayfasi.classList.remove('aktif');
             infoSayfasi.classList.add('aktif');
-        }, 500);
-
-        setTimeout(() => {
             info.classList.remove('hide');
             info.classList.add('show');
-        }, 800);
+        }, 500);
 
         setTimeout(() => {
             info_baslik.classList.remove('hide');
             info_baslik.classList.add('show');
-        }, 1000);
+        }, 600);
 
         setTimeout(() => {
             info_yazi.classList.remove('hide');
             info_yazi.classList.add('show');
-        }, 1100);
+        }, 800);
 
         setTimeout(() => {
             HomeButton.classList.remove('hide');
             HomeButton.classList.add('show');
-        }, 1200);
+        }, 800);
 
         // Sayfa durumu kaydediliyor
         localStorage.setItem("currentPage", "infoSayfasi");
