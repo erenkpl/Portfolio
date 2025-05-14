@@ -13,9 +13,11 @@ window.addEventListener('DOMContentLoaded', function(){
     const proje_kutusu = document.querySelectorAll('.proje-kutusu');
 
     menu.style.display = "none";
+    info.style.display = "none";
 
     setTimeout(() => {
         menu.style.display = "block";
+        info.style.display = "flex";
         HomeButton.style.visibility = "visible";
     }, 500);
 

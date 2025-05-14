@@ -104,10 +104,11 @@
     }
     
     .ust-div{
+        box-sizing: border-box;
         flex-direction: column-reverse;
         margin-top: 25px;
         padding: 0;
-        padding-right: 50px;
+        /* Telefonda fotoyu kesiyor. Düzelt onu */
     }
 
     .div-foto{

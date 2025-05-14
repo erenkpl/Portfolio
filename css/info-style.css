@@ -5,6 +5,7 @@
     align-items: center;
     visibility: hidden;
     top: 0;
+    opacity: 0;
     overflow: hidden;
     position: absolute;
     text-align: center;
