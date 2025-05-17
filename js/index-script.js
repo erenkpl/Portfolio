@@ -39,6 +39,9 @@ window.addEventListener('DOMContentLoaded', function(){
     // Anasayfaya dönüş işlemi
     HomeButton.addEventListener('click', function() {
 
+        foto.classList.remove('show');
+        yazi.classList.remove('show');
+
         setTimeout(() => {
             HomeButton.classList.remove('show');
             HomeButton.classList.add('hide');

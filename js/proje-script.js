@@ -49,6 +49,8 @@ window.addEventListener('DOMContentLoaded', function() {
         }, 900);
     }
 
+    // Masaustu
+
     buton_proje.addEventListener('click', function() {
         
         setTimeout(() => {
@@ -104,6 +106,8 @@ window.addEventListener('DOMContentLoaded', function() {
         // Sayfa durumu kaydediliyor
         localStorage.setItem("currentPage", "projeSayfasi");
     });
+
+    // Mobile
 
     buton_proje_mobile.addEventListener('click', function(){
 

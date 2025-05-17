@@ -55,6 +55,8 @@ window.addEventListener('DOMContentLoaded', function() {
         }, 900);
     }
 
+    // Masaustu
+
     buton_info.addEventListener('click', function() {
 
         proje_kutusu.forEach((kutu, index) => {
@@ -108,6 +110,8 @@ window.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem("currentPage", "infoSayfasi");
     });
 
+    // Mobile
+
     buton_info_mobile.addEventListener('click', function(){
 
         menu.classList.toggle('show');
@@ -117,7 +121,7 @@ window.addEventListener('DOMContentLoaded', function() {
             setTimeout(() => {
                 kutu.classList.remove('show');
                 kutu.classList.add('hide');
-            }, 200 + index * 100);
+            }, 100 + index * 100);
         });
 
         setTimeout(() => {
@@ -128,8 +132,6 @@ window.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             foto.classList.remove('show');
             foto.classList.add('hide');
-            proje.classList.remove('show');
-            proje.classList.add('hide');
         }, 400);
 
         setTimeout(() => {
@@ -138,6 +140,8 @@ window.addEventListener('DOMContentLoaded', function() {
         }, 400);
 
         setTimeout(() => {
+            proje.classList.remove('show');
+            proje.classList.add('hide');
             anasayfa.classList.remove('aktif');
             projesayfasi.classList.remove('aktif');
             infoSayfasi.classList.add('aktif');

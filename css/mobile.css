@@ -7,7 +7,7 @@
     height: 20px;
     cursor: pointer;
     mix-blend-mode: difference;
-    z-index: 20;
+    z-index: 40;
     transition: transform 0.3s ease;
 }
 
@@ -45,7 +45,7 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     text-align: center;
     border-top: 1px solid #3333331f;
-    z-index: 15;
+    z-index: 35;
     transform: translateX(100%);
     transition: transform 0.8s cubic-bezier(0.6, 0, 0.2, 1), opacity 1s cubic-bezier(0.6, 0, 0.2, 1), max-height 0.8s ease;
     opacity: 0;
@@ -111,6 +111,7 @@
     }
 
     .div-foto{
+        width: 100%;
         right: 0%;
     }
 
@@ -141,9 +142,14 @@
 
     .proje{
         width: 100%;
+        height: 75%;
+        margin-top: 75px;
         flex-direction: column-reverse;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
     }
 
     .info{
