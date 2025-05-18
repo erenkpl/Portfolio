@@ -107,7 +107,6 @@
         box-sizing: border-box;
         flex-direction: column-reverse;
         margin-top: 25px;
-        /* Telefonda fotoyu kesiyor. Düzelt onu, hamburger menü de kayıp.*/
     }
 
     .div-foto{
@@ -142,8 +141,8 @@
 
     .proje{
         width: 100%;
-        height: 75%;
-        margin-top: 75px;
+        height: 85%;
+        margin-top: 72px;
         flex-direction: column-reverse;
         justify-content: start;
         align-items: center;

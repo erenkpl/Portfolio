@@ -31,7 +31,7 @@ html, body{
 
 body{
     margin: 0;
-    height: 100vh;
+    height: calc(var(--vh) * 100);
     background: linear-gradient(
         100deg,
         #C4C4C4 50%,
@@ -73,7 +73,7 @@ body.gradient-expanded{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: calc(100vh - 80px);
+    height: calc(var(--vh) * 100);
     padding: 0 50px;
 }
 

@@ -91,4 +91,13 @@ window.addEventListener('DOMContentLoaded', function(){
         // Sayfa durumu kaydediliyor
         localStorage.setItem("currentPage", "giris");
     });
+
+    function setRealVh() {
+        const vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
+
+    window.addEventListener('resize', setRealVh);
+    window.addEventListener('load', setRealVh);
+
 });
