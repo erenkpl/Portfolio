@@ -106,7 +106,7 @@
     .ust-div{
         box-sizing: border-box;
         flex-direction: column-reverse;
-        margin-top: 25px;
+        margin-top: 30px;
     }
 
     .div-foto{
@@ -140,15 +140,14 @@
     }
 
     .proje{
+        /* Sorun! Proje divinin altındaki boşluk */
+        flex-wrap: nowrap;
         width: 100%;
-        height: 85%;
-        margin-top: 72px;
+        height: 75%;
+        margin-top: 75px;
         flex-direction: column-reverse;
         justify-content: start;
         align-items: center;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        scroll-behavior: smooth;
     }
 
     .info{

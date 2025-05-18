@@ -31,7 +31,7 @@ html, body{
 
 body{
     margin: 0;
-    height: calc(var(--vh) * 100);
+    height: 100vh;
     background: linear-gradient(
         100deg,
         #C4C4C4 50%,
@@ -73,7 +73,7 @@ body.gradient-expanded{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: calc(var(--vh) * 100);
+    height: calc(100vh - 80px);
     padding: 0 50px;
 }
 
@@ -281,10 +281,6 @@ ul{
 
 .link:active{
     transform: scale(0.95);
-}
-
-.on-bilgi{
-    /* Sonra dolacak */
 }
 
 footer{
