@@ -143,7 +143,7 @@
         /* Sorun! Proje divinin altındaki boşluk */
         flex-wrap: nowrap;
         width: 100%;
-        height: 75%;
+        height: 84%;
         margin-top: 75px;
         flex-direction: column-reverse;
         justify-content: start;
