@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', function(){
     const HomeButton = document.getElementById("home-butonu");
     const foto = document.querySelector('.div-foto');
+    const portre = document.getElementById('portre');
     const yazi = document.querySelector('.yazi');
     const info = document.querySelector('.info');
     const proje = document.querySelector('.proje');
@@ -15,6 +16,12 @@ window.addEventListener('DOMContentLoaded', function(){
 
     menu.style.display = "none";
     info.style.display = "none";
+
+    // Test için eklendi, anasayfa foto gecikmesini önlemek için.
+    portre.addEventListener('load', () => {
+        foto.classList.remove('hidden');
+        foto.classList.add('visible');
+    });
 
     setTimeout(() => {
         menu.style.display = "block";
