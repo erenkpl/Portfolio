@@ -74,8 +74,6 @@ window.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             foto.classList.remove('show');
             foto.classList.add('hide');
-            proje.classList.remove('show');
-            proje.classList.add('hide');
         }, 400);
 
         setTimeout(() => {
@@ -104,6 +102,8 @@ window.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             HomeButton.classList.remove('hide');
             HomeButton.classList.add('show');
+            proje.classList.remove('show');
+            proje.classList.add('hide');
         }, 800);
 
         // Sayfa durumu kaydediliyor

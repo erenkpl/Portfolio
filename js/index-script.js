@@ -3,6 +3,7 @@ window.addEventListener('DOMContentLoaded', function(){
     const foto = document.querySelector('.div-foto');
     const yazi = document.querySelector('.yazi');
     const info = document.querySelector('.info');
+    const proje = document.querySelector('.proje');
     const info_baslik = document.querySelector('.info-baslik');
     const info_yazi = document.querySelector('.info-text');
     const hamburger = document.querySelector('.hamburger-menu');
@@ -51,7 +52,7 @@ window.addEventListener('DOMContentLoaded', function(){
             setTimeout(() => {
                 kutu.classList.remove('show');
                 kutu.classList.add('hide');
-            }, 300 + index * 100);
+            }, 200 + index * 100);
         });
 
         setTimeout(() => {
@@ -85,6 +86,8 @@ window.addEventListener('DOMContentLoaded', function(){
         setTimeout(() => {
             yazi.classList.remove('hide');
             yazi.classList.add('show');
+            proje.classList.remove('show');
+            proje.classList.add('hide');
         }, 1200);
     
 

@@ -141,12 +141,11 @@
 
     .proje{
         /* Sorun! Proje divinin altındaki boşluk */
-        flex-wrap: nowrap;
+        flex-direction: row;
         width: 100%;
         height: 84%;
         margin-top: 75px;
-        flex-direction: column-reverse;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
     }
 
