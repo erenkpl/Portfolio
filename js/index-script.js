@@ -19,25 +19,22 @@ window.addEventListener('DOMContentLoaded', function(){
 
     // Test için eklendi, anasayfa foto gecikmesini önlemek için.
     portre.addEventListener('load', () => {
-        foto.classList.remove('hidden');
-        foto.classList.add('visible');
+        setTimeout(() => {
+            menu.style.display = "block";
+            info.style.display = "flex";
+            HomeButton.style.visibility = "visible";
+        }, 500);
+
+        setTimeout(() => {
+            foto.classList.remove('hide');
+            foto.classList.add('show');
+        }, 400);
+
+        setTimeout(() => {
+            yazi.classList.remove('hide');
+            yazi.classList.add('show');
+        }, 1000);
     });
-
-    setTimeout(() => {
-        menu.style.display = "block";
-        info.style.display = "flex";
-        HomeButton.style.visibility = "visible";
-    }, 500);
-
-    setTimeout(() => {
-        foto.classList.remove('hide');
-        foto.classList.add('show');
-    }, 400);
-
-    setTimeout(() => {
-        yazi.classList.remove('hide');
-        yazi.classList.add('show');
-    }, 1000);
 
     hamburger.addEventListener('click', function(){
         menu.classList.toggle('show');
