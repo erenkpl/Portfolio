@@ -99,8 +99,6 @@
 
     .header-buttons-home {
         position: absolute;
-        top: 10px;
-        left: 10px;
     }
     
     .ust-div{
@@ -140,7 +138,6 @@
     }
 
     .proje{
-        /* Sorun! Proje divinin altındaki boşluk */
         flex-direction: row;
         width: 100%;
         height: 84%;

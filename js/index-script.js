@@ -52,7 +52,7 @@ window.addEventListener('DOMContentLoaded', function(){
             setTimeout(() => {
                 kutu.classList.remove('show');
                 kutu.classList.add('hide');
-            }, 200 + index * 100);
+            }, 200 + index * 50);
         });
 
         setTimeout(() => {

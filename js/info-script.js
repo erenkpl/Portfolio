@@ -63,7 +63,7 @@ window.addEventListener('DOMContentLoaded', function() {
             setTimeout(() => {
                 kutu.classList.remove('show');
                 kutu.classList.add('hide');
-            }, 200 + index * 100);
+            }, 200 + index * 50);
         });
 
         setTimeout(() => {
@@ -121,7 +121,7 @@ window.addEventListener('DOMContentLoaded', function() {
             setTimeout(() => {
                 kutu.classList.remove('show');
                 kutu.classList.add('hide');
-            }, 100 + index * 100);
+            }, 200 + index * 50);
         });
 
         setTimeout(() => {
@@ -140,8 +140,6 @@ window.addEventListener('DOMContentLoaded', function() {
         }, 400);
 
         setTimeout(() => {
-            proje.classList.remove('show');
-            proje.classList.add('hide');
             anasayfa.classList.remove('aktif');
             projesayfasi.classList.remove('aktif');
             infoSayfasi.classList.add('aktif');
@@ -162,6 +160,8 @@ window.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             HomeButton.classList.remove('hide');
             HomeButton.classList.add('show');
+            proje.classList.remove('show');
+            proje.classList.add('hide');
         }, 800);
 
         // Sayfa durumu kaydediliyor
