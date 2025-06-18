@@ -59,12 +59,12 @@ window.addEventListener('DOMContentLoaded', function() {
 
     buton_info.addEventListener('click', function() {
 
-        proje_kutusu.forEach((kutu, index) => {
+        for (let i = proje_kutusu.length - 1; i >= 0; i--) {
             setTimeout(() => {
-                kutu.classList.remove('show');
-                kutu.classList.add('hide');
-            }, 200 + index * 50);
-        });
+                proje_kutusu[i].classList.remove('show');
+                proje_kutusu[i].classList.add('hide');
+            }, 200 + (proje_kutusu.length - 1 - i) * 50);
+        }
 
         setTimeout(() => {
             yazi.classList.remove('show');

@@ -17,7 +17,6 @@ window.addEventListener('DOMContentLoaded', function(){
     menu.style.display = "none";
     info.style.display = "none";
 
-    // Test için eklendi, anasayfa foto gecikmesini önlemek için.
     portre.addEventListener('load', () => {
         setTimeout(() => {
             menu.style.display = "block";
@@ -52,12 +51,21 @@ window.addEventListener('DOMContentLoaded', function(){
             HomeButton.classList.add('hide');
         }, 200);
 
-        proje_kutusu.forEach((kutu, index) => {
-            setTimeout(() => {
-                kutu.classList.remove('show');
-                kutu.classList.add('hide');
-            }, 200 + index * 50);
-        });
+        if (window.innerWidth > 768) {
+            for (let i = proje_kutusu.length - 1; i >= 0; i--) {
+                setTimeout(() => {
+                    proje_kutusu[i].classList.remove('show');
+                    proje_kutusu[i].classList.add('hide');
+                }, 200 + (proje_kutusu.length - 1 - i) * 50);
+            }
+        } else {
+            proje_kutusu.forEach((kutu, index) => {
+                setTimeout(() => {
+                    kutu.classList.remove('show');
+                    kutu.classList.add('hide');
+                }, 200 + index * 50);
+            });
+        }
 
         setTimeout(() => {
             info.classList.remove('show');
