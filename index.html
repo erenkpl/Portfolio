@@ -151,10 +151,22 @@
             Merhaba!
         </div>
 
-        <div class="info-text">
-            Ben, Eren Küpeli. Atılım Üniversitesi'nden mezun olmuş bir Yazılım Mühendisiyim.
+        <div class="info-text" id="hakkimdaYazi">
+
         </div>
+
     </div>
+
+    <script>
+            fetch('hakkimda.html')
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById('hakkimdaYazi').innerHTML = data;
+                })
+                .catch(error => {
+                console.error('Hakkımda yazısı yüklenemedi:', error);
+                });
+    </script>
 
     <footer>
         <p>&copy;2025 Eren Küpeli. All rights reserved.</p>
