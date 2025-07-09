@@ -150,6 +150,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
         setTimeout(() => {
             proje.classList.remove('hide');
+            proje.scrollTop = 0;
             proje.classList.add('show');
         }, 800);
 
