@@ -75,3 +75,7 @@
     transform: translateX(20%);
     transition: transform 0.8s ease, opacity 0.8s ease;
 }
+
+/* ÖNEMLİ! İletişim sayfasını hakkımda sayfasının altına ekle, iletişim sayfasına herhangi bir sayfadan girilince
+ hakkımda sayfası yüklensin ama en alta kaymış şekilde (scrollable div). Hakkımdadan girilirse de, animasyonlu 
+ ve otomatik bir şekilde sayfa aşağıya kaysın. */
